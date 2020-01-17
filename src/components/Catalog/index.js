@@ -3,11 +3,13 @@ import CharacterCard from '../CharacterCard'
 
 import './style.css';
 
-export default () => {
+export default ({characters}) => {
     return (
         <section className="Home__ShowcaseWrapper">
             <div className="Home__ShowcaseInner">
-                <CharacterCard />
+                {
+                    characters.map(el => (<CharacterCard key={el.id} />))
+                }
             </div>
         </section>
     );
