@@ -16,7 +16,7 @@ class App extends Component {
         return (
             <main>
                 <Header />
-                <FilterCharacter />
+                <FilterCharacter foo={this.foo}/>
                 <Catalog characters={characters}/>
 
             </main>
@@ -31,6 +31,9 @@ class App extends Component {
                     characters: [...res.data.results]
                 })
             })
+    }
+    foo(){
+        console.log("FOOOO!!");
     }
 
 }
