@@ -8,7 +8,7 @@ export default ({characters}) => {
         <section className="Home__ShowcaseWrapper">
             <div className="Home__ShowcaseInner">
                 {
-                    characters.map(el => (<CharacterCard key={el.id} />))
+                    characters.map(el => (<CharacterCard {...el} key={el.id} />))
                 }
             </div>
         </section>
