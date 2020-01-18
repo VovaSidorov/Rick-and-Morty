@@ -16,8 +16,9 @@ class App extends Component {
         return (
             <main>
                 <Header />
-                <Catalog characters={characters}/>
                 <FilterCharacter />
+                <Catalog characters={characters}/>
+
             </main>
         );
     }
