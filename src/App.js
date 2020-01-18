@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 
 import Header from './components/Header'
 import Catalog from './components/Catalog'
+import FilterCharacter from './components/FilterCharacter'
 import  axios from "axios";
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
             <main>
                 <Header />
                 <Catalog characters={characters}/>
+                <FilterCharacter />
             </main>
         );
     }
