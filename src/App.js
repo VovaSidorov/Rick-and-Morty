@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import Header from './components/Header'
 import Catalog from './components/Catalog'
 import FilterCharacter from './components/FilterCharacter'
+import Menu from './components/Menu'
 import  axios from "axios";
 
 class App extends Component {
@@ -24,7 +25,7 @@ class App extends Component {
 
         return (
             <main>
-
+                <Menu />
                 <Header />
 
                 <FilterCharacter filterCharacters={this.filterCharacters}/>
