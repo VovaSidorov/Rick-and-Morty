@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import assignPropTypes from 'assign-prop-types';
 import './style.css';
+import {Link} from "react-router-dom";
 
 export default assignPropTypes({
     image: PropTypes.string.isRequired,
@@ -49,6 +50,9 @@ export default assignPropTypes({
                 <div className="CharacterCard__TextWrapper">
                     <span>LAST LOCATION</span>
                     <p>{location.name}</p>
+                </div>
+                <div className="CharacterCard__TextWrapper">
+                    <Link to={`/character/${id}`}>Show more</Link>
                 </div>
             </div>
 
