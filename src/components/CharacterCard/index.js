@@ -16,7 +16,7 @@ export default assignPropTypes({
 })((props) => {
 
     const {image, name, id, status, species, gender, origin, location} = props;
-
+    // const {image, name, id, status, species, gender, origin, location} = props;
     return (
         <article className="CharacterCard__Wrapper">
 
